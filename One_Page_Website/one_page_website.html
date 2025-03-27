@@ -3,13 +3,15 @@
 	<head>
 		<title> NAFLAT Food Website </title>
 		<meta charset = "utf-8">
+		<link rel="stylesheet" href="./CSS/shared.css">
+		<link rel="stylesheet" href="./CSS/animations.css">
 	<head>
 	<body>
 	
 	<!---START NAV--->
-	<div>
-		<div>
-			<ul>
+	<div class="wrap">
+		<div class="menu-container">
+			<ul class="menu">
 				<a href = "#home"><li> HOME </li></a>
 				<a href = "#gallery"><li> GALLERY </li></a>
 				<a href = "#contact"><li> CONTACT </li></a>
@@ -20,25 +22,25 @@
 	
 	<!---START HOME--->
 	<div id = "home">
-		<div>
-			<div>
-				<span> NAFLAT Home Cuisine </span>
+		<div class="container">
+			<div class="text-center">
+				<span class="head-main"> NAFLAT Home Cuisine </span>
 			</div>
 		</div>
 	</div>
 	<!---END HOME--->	
 		
 	<!---START GALLERY--->
-	<section>
-		<div id = "gallery">
+	<section id="gallery">
+		<div class="container">
 			<h1> Gallery </h1>
-			<div>
+			<div class="flex-container">
 			
 				<!---START PHOTO CONTAINER 1--->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src = ".\Images\Efo_Riro.jpg" alt = "Image of Efo Riro" style = "width:500px;height:600px">
-						<div>
+						<div class="photo-overlay">
 							<h3> Click to enlarge </h3>
 						</div>
 					</div>
@@ -46,10 +48,10 @@
 				<!---END PHOTO CONTAINER 1--->
 				
 				<!---START PHOTO CONTAINER 2--->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src = ".\Images\Egusi.jpg" alt = "Image of Egusi" style = "width:500px;height:600px">
-						<div>
+						<div class="photo-overlay">
 							<h3> Click to enlarge </h3>
 						</div>
 					</div>
@@ -57,10 +59,10 @@
 				<!---END PHOTO CONTAINER 2--->
 				
 				<!---START PHOTO CONTAINER 3--->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src = ".\Images\Fried_rice.png" alt = "Image of Fried Rice" style = "width:500px;height:600px">
-						<div>
+						<div class="photo-overlay">
 							<h3> Click to enlarge </h3>
 						</div>
 					</div>
@@ -68,10 +70,10 @@
 				<!---END PHOTO CONTAINER 3--->
 				
 				<!---START PHOTO CONTAINER 4--->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src = ".\Images\Jollof_rice.jpg" alt = "Image of Jollof Rice" style = "width:500px;height:600px">
-						<div>
+						<div class="photo-overlay">
 							<h3> Click to enlarge </h3>
 						</div>
 					</div>
@@ -79,10 +81,10 @@
 				<!---END PHOTO CONTAINER 4--->
 				
 				<!---START PHOTO CONTAINER 5--->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src = ".\Images\Ofada_rice.jpeg" alt = "Image of Ofada Rice" style = "width:500px;height:600px">
-						<div>
+						<div class="photo-overlay">
 							<h3> Click to enlarge </h3>
 						</div>
 					</div>
@@ -90,10 +92,10 @@
 				<!---END PHOTO CONTAINER 5--->
 				
 				<!---START PHOTO CONTAINER 6--->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src = ".\Images\Yam_porridge.jpeg" alt = "Image of Yam Porridge" style = "width:500px;height:600px">
-						<div>
+						<div class="photo-overlay">
 							<h3> Click to enlarge </h3>
 						</div>
 					</div>
@@ -105,25 +107,21 @@
 	<!---END GALLERY--->
 	
 	<!---START CONTACT--->
-	<section>
-		<div id = "contact">
-			<div>
-				<h2> Contact Us</h2>
-				<div>
-					<p> 
+	<section id = "contact">
+		<div class = "container">
+			<div class="heading-padding">
+				<h1 class="heading-padding"> Contact Us</h1>
+				<div class="reservation">
+					<p class="rsvp-text"> 
 						Please fill in the details below to place your order 
 					</p>
-						<div>
+						<div class="form-rsvp">
 							<form action = "" method = "post">
-								<label for="Name">Name</label>
-								<input type = "text" placeholder = "Your name ..."><br>
-								<label for="Phone">Phone Number</label>
-								<input type = "text" placeholder = "Your phone number ..."><br>
-								<label for="email">Email Address</label>
-								<input type = "text" placeholder = "Your email address ..."><br>
-								<label for="order">Order Details</label>
-								<input type = "text" placeholder = "Type your order details here ...">
-								<div>
+								<input class="rsvp" type = "text" placeholder = "Your name ...">
+								<input class="rsvp" type = "text" placeholder = "Your phone number ...">
+								<input class="rsvp" type = "text" placeholder = "Your email address ...">
+								<input class="rsvp" type = "text" placeholder = "Type your order details here ...">
+								<div class="submit">
 									<input type = "submit" value = "Submit">
 								</div>
 							</form>
